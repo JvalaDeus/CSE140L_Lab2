@@ -1,7 +1,7 @@
 // CSE140L  
 // see Structural Diagram in Lab2 assignment writeup
 // fill in missing connections and parameters
-module Top_Level #(parameter NS=60, NH=24, ND=7, NM=12)(
+module Top_Level #(parameter int NS=60, parameter int NH=24, parameter int ND=7, parameter int NM=12)(
   input Reset,
       Timeset, 	  // manual buttons
       Alarmset,	  //	(five total)
@@ -20,6 +20,7 @@ module Top_Level #(parameter NS=60, NH=24, ND=7, NM=12)(
               T1disp, T0disp,   // for part 3
               N1disp, N0disp,   // for part 3
   output logic Buzz);	           // alarm sounds
+  localparam int yr = 2024;
 
 // internal connections (may need more)
   logic[6:0] TSec, TMin, THrs, TDay,     // clock/time 
@@ -45,14 +46,16 @@ module Top_Level #(parameter NS=60, NH=24, ND=7, NM=12)(
   assign Hrs = Alarmset? AHrs : THrs;        // Display hours (time or alarm)
   assign Day = Alarmset? ADay : TDay; 
 
-  always_comb begin
+   always_comb begin
     unique case (TMonth)
-      1,3,5,7,8,10,12: max_days = 31;
-      4,6,9,11:        max_days = 30;
-      default:         max_days = 29; // assume leap year
+    4'd1,4'd3,4'd5,4'd7,4'd8,4'd10,4'd12:  max_days = 31;
+    4'd4,4'd6,4'd9,4'd11:                  max_days = 30;
+    default:                               // February
+    max_days = ( (yr%400==0) || (yr%4==0 && yr%100!=0) ) ? 29 : 28;
     endcase
     date_rollover = (TDate == max_days);
-  end
+    end
+
   always_ff @(posedge Pulse or posedge Reset) begin
   if (Reset) begin
     TDate  <= 6'd1;
