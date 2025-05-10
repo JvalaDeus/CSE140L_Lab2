@@ -12,6 +12,11 @@ module alarm(
 );
 
   always_comb begin
-    buzz = ((tmin == amin) && (thrs == ahrs) && (tday == aday));
+    if (alarmon && (tday != aday) && (tday != (aday + 1) % 7) &&
+        (tmin == amin) && (thrs == ahrs)) begin
+      buzz = 1;
+    end else begin
+      buzz = 0;
+    end
   end
 endmodule
