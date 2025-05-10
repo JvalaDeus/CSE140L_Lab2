@@ -1,7 +1,7 @@
 // CSE140L  
 // see Structural Diagram in Lab2 assignment writeup
 // fill in missing connections and parameters
-module Top_Level #(parameter NS=60, NH=24)(
+module Top_Level #(parameter NS=60, NH=24, ND=7)(
   input Reset,
         Timeset, 	  // manual buttons
         Alarmset,	  //	(five total)
