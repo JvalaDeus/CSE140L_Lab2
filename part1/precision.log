@@ -1,0 +1,897 @@
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+//  Precision RTL Synthesis 64-bit 2024.2.0.4 (Production Release) Wed Aug 14 00:06:06 PDT 2024
+//  
+//             This material contains trade secrets or otherwise confidential
+//             information owned by Siemens Industry Software Inc. or its    
+//             affiliates (collectively, "Siemens"), or its licensors. Access to
+//             and use of this information is strictly limited as set forth    
+//             in the Customer's applicable agreements with Siemens.           
+//  
+//                              Unpublished work. Copyright 2024 Siemens               
+//  
+//  Running on Linux runner@bf1b18694a59 #232-Ubuntu SMP Sat Mar 15 15:34:35 UTC 2025 5.4.0-212-generic x86_64
+//  
+//  Start time Fri May  9 23:49:11 2025
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9531]: Created directory: /home/runner/impl_1/ui_data.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [15302]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15328]: Setting Part to: "7A100TCSG324".
+# Info: [15329]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3052]: Decompressing file : /usr/share/precision/Mgc_home/pkgs/psr/techlibs/xca7.syn in /home/runner/impl_1/synlib.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [645]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2024b.6
+# Info: [42003]: Starting analysis of files in library "work"
+# Info: [41002]: Analyzing input file "/home/runner/design.sv" ...
+# Info: [41021]: Analyzing included file "alarm.sv" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "ct_mod_N.sv" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "lcd_int3.sv" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [41021]: Analyzing included file "Top_Level.sv" ....
+# Info: [41022]: Continuing with analysis of file "/home/runner/design.sv" ....
+# Info: [670]: Top module of the design is set to: Top_Level.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2024b.6
+# Info: [40000]: Last compiled on Jul 24 2024 17:10:21
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2024b.6
+# Info: [40000]: Last compiled on Jul 24 2024 17:47:48
+# Info: [44512]: Initializing...
+# Info: [44506]: Module ct_mod_N: Pre-processing...
+# Info: [44506]: Module lcd_int: Pre-processing...
+# Info: [44506]: Module alarm: Pre-processing...
+# Info: [44522]: Root Module Top_Level: Pre-processing...
+# Warning: [45729]: "Top_Level.sv", line 22: H_max has never been used.
+# Info: [44508]: Module ct_mod_N: Compiling...
+# Info: [44838]: "ct_mod_N.sv", line 18: Macro Modgen_Counter "counter_up_sclear_clock_cnt_en_0_7" inferred for node "ct_out".
+# Info: [44508]: Module lcd_int: Compiling...
+# Info: [44508]: Module alarm: Compiling...
+# Info: [44523]: Root Module Top_Level: Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 1, Inferred (Modgen/Selcounter/AddSub) : 1 (1 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+# Info: [44856]: Total lines of RTL compiled: 181.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [15334]: Doing rtl optimizations.
+# Info: [671]: Finished compiling design.
+# Info: [668]: Current working directory: /home/runner/impl_1.
+# Info: [4558]: 9 Instances are flattened in hierarchical block .work.Top_Level.INTERFACE.
+# Info: [20013]: Precision will use 8 processor(s).
+# Info: [15002]: Optimizing design view:.work.Top_Level.INTERFACE
+# Info: [15002]: Optimizing design view:.work.Top_Level.INTERFACE
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [8053]: Added global buffer BUFGP for Port port:Pulse
+# Info: [3027]: Writing file: /home/runner/impl_1/design.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/design.xdc.
+# Info: -- Writing file /home/runner/impl_1/design.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/design.v.
+# Info: -- Writing file /home/runner/impl_1/design.tcl
+# Info: [671]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 18.9 secs.
+# Info: [11020]: Overall running time for synthesis: 30.8 secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/design.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: -------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/design_area.rep
+# Info: 1               /home/runner/impl_1/design_con_rep.sdc
+# Info: 2               /home/runner/impl_1/design_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/design_fsm.rep
+# Info: 4               /home/runner/impl_1/design_dsp_modes.rep
+# Info: 5               /home/runner/impl_1/design_ram_modes.rep
+# Info: 6               /home/runner/impl_1/design_env.htm
+# Info: 7               /home/runner/impl_1/design.edf
+# Info: 8               /home/runner/impl_1/design.v
+# Info: 9               /home/runner/impl_1/design.xdc
+# Info: 10              /home/runner/impl_1/design.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               50      210      23.81%
+# Info: Global Buffers                    1       32        3.12%
+# Info: LUTs                              86      63400     0.14%
+# Info: CLB Slices                        7       15850     0.04%
+# Info: Dffs or Latches                   34      126800    0.03%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *************************************************************
+# Info: Library: work    Cell: Top_Level    View: INTERFACE
+# Info: *************************************************************
+# Info:  Number of ports :                           50
+# Info:  Number of nets :                           262
+# Info:  Number of instances :                      255
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of Dffs or Latches :                 34
+# Info:  Number of LUTs :                            86
+# Info:  Number of Primitive LUTs :                 106
+# Info:  Number of LUTs with LUTNM/HLUTNM :          40
+# Info:  Number of MUX CARRYs :                      29
+# Info:  Number of accumulated instances :          255
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.Top_Level.INTERFACE
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Port         | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Reset        | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Timeset      | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Alarmset     | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Minadv       | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Hrsadv       | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Alarmon      | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Pulse        | Input     |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S1disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | S0disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M1disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | M0disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H1disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(6)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(5)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(4)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(3)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(2)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(1)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | H0disp(0)    | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: | Buzz         | Output    |          |          |          |
+# Info: +--------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: [12022]: Design has no timing constraint and no timing information.
+# Info: //Precision RTL Synthesis 64-bit 2024.2.0.4 (Production Release) Wed Aug 14 00:06:06 PDT 2024
+# Info: //
+# Info: //           This material contains trade secrets or otherwise confidential
+# Info: //           information owned by Siemens Industry Software Inc. or its
+# Info: //           affiliates (collectively, "Siemens"), or its licensors. Access to
+# Info: //           and use of this information is strictly limited as set forth
+# Info: //           in the Customer's applicable agreements with Siemens.
+# Info: //
+# Info: //                            Unpublished work. Copyright 2024 Siemens
+# Info: //
+# Info: //Running on Linux runner@bf1b18694a59 #232-Ubuntu SMP Sat Mar 15 15:34:35 UTC 2025 5.4.0-212-generic x86_64
+# Info: //
+# Info: //
+# Info: // Verilog description for cell Top_Level,
+# Info: //
+# Info: module Top_Level ( Reset, Timeset, Alarmset, Minadv, Hrsadv, Alarmon, Pulse,
+# Info:                    S1disp, S0disp, M1disp, M0disp, H1disp, H0disp, Buzz ) ;
+# Info:     input Reset ;
+# Info:     input Timeset ;
+# Info:     input Alarmset ;
+# Info:     input Minadv ;
+# Info:     input Hrsadv ;
+# Info:     input Alarmon ;
+# Info:     input Pulse ;
+# Info:     output [6:0]S1disp ;
+# Info:     output [6:0]S0disp ;
+# Info:     output [6:0]M1disp ;
+# Info:     output [6:0]M0disp ;
+# Info:     output [6:0]H1disp ;
+# Info:     output [6:0]H0disp ;
+# Info:     output Buzz ;
+# Info:     wire \S1disp_1_0(2)  , \S0disp_1_0(2)  , \M1disp_1_0(2)  , \M0disp_1_0(2)  ,
+# Info:          \H1disp_1_0(2)  , \H0disp_1_0(2)  ;
+# Info:     wire [5:0]TSec;
+# Info:     wire [6:0]TMin;
+# Info:     wire [6:0]THrs;
+# Info:     wire [6:0]AMin;
+# Info:     wire [6:0]AHrs;
+# Info:     wire \inc_d(0)  , nx8474z1, \inc_d(1)  , nx8475z1, \inc_d(2)  , nx8476z1,
+# Info:          \inc_d(3)  , nx8477z1, \inc_d(4)  , nx51683z1, \inc_d(5)  ,
+# Info:          \inc_d(0)_1_93  , nx63830z1, \inc_d(1)_1_96  , nx6079z1,
+# Info:          \inc_d(2)_1_99  , nx51672z1, \inc_d(3)_1_102  , nx43887z1,
+# Info:          \inc_d(4)_1_105  , nx58480z1, \inc_d(5)_1_108  , nx50695z1,
+# Info:          \inc_d(6)_1_111  , \inc_d(0)_1_137  , nx61836z1, \inc_d(1)_1_140  ,
+# Info:          nx4085z1, \inc_d(2)_1_143  , nx53666z1, \inc_d(3)_1_146  , nx45881z1,
+# Info:          \inc_d(4)_1_149  , nx38096z1, \inc_d(5)_1_152  , nx52689z1,
+# Info:          \inc_d(6)_1_155  , \inc_d(0)_1_181  , nx59842z1, \inc_d(1)_1_184  ,
+# Info:          nx2091z1, \inc_d(2)_1_187  , nx55660z1, \inc_d(3)_1_190  , nx47875z1,
+# Info:          \inc_d(4)_1_193  , nx62468z1, \inc_d(5)_1_196  , nx54683z1,
+# Info:          \inc_d(6)_1_199  , \inc_d(0)_1_225  , nx57848z1, \inc_d(1)_1_228  ,
+# Info:          nx97z1, \inc_d(2)_1_231  , nx57654z1, \inc_d(3)_1_234  , nx49869z1,
+# Info:          \inc_d(4)_1_237  , nx42084z1, \inc_d(5)_1_240  , nx56677z1,
+# Info:          \inc_d(6)_1_243  ;
+# Info:     wire \a(4)  ;
+# Info:     wire Reset_int, Timeset_int, Alarmset_int, Minadv_int, Hrsadv_int,
+# Info:          Alarmon_int;
+# Info:     wire Pulse_int;
+# Info:     wire nx15072z1, nx38425z1, nx37428z1, nx36431z1, nx33440z1, nx56674z1,
+# Info:          nx22895z1, nx25886z1, nx26883z1, nx36455z1, nx39446z1, nx15048z1,
+# Info:          nx28185z1, nx7077z1, nx41745z1, nx8473z1, nx2982z1, nx11274z1, nx4976z1,
+# Info:          nx39672z1, nx7286z1, nx28360z1, nx51271z1, nx56256z1, nx13078z1,
+# Info:          nx14075z1, nx16069z1, nx18063z1, nx19060z1, nx35434z1, nx32443z1,
+# Info:          nx38425z4, nx58668z1, nx57671z1, nx55677z1, nx53683z1, nx52686z1,
+# Info:          nx20901z1, nx21898z1, nx23892z1, nx34461z1, nx35458z1, nx37452z1,
+# Info:          nx40443z1, nx17042z1, nx16045z1, nx14051z1, nx12057z1, nx11060z1,
+# Info:          nx45858z1, nx45858z6, nx45858z7, nx45858z8, nx45858z4, nx45858z5,
+# Info:          nx45858z2, nx45858z3, nx60217z1, nx34461z14, nx34461z5, nx34461z12,
+# Info:          nx34461z11, nx17042z2, nx34461z13, nx34461z10, nx34461z6, nx34461z4,
+# Info:          nx34461z3, nx34461z9, nx34461z2, nx34461z8, nx34461z7, nx49747z1,
+# Info:          nx58668z14, nx58668z5, nx58668z13, nx20901z2, nx58668z11, nx58668z10,
+# Info:          nx58668z12, nx58668z6, nx58668z4, nx58668z3, nx58668z9, nx58668z2,
+# Info:          nx58668z8, nx58668z7, nx925z1, nx38425z3, nx38425z2, nx2982z2, nx4976z2,
+# Info:          nx6970z1, nx6970z3, nx6970z2, nx54956z1, nx7286z2, nx54956z3, nx54956z2,
+# Info:          nx28360z2, nx51271z2;
+# Info:     FDRE \reg_q(5)  (.Q (TSec[5]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(5)  ), .R (nx51271z1)) ;
+# Info:     FDRE \reg_q(4)  (.Q (TSec[4]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(4)  ), .R (nx51271z1)) ;
+# Info:     FDRE \reg_q(3)  (.Q (TSec[3]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(3)  ), .R (nx51271z1)) ;
+# Info:     FDRE \reg_q(2)  (.Q (TSec[2]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(2)  ), .R (nx51271z1)) ;
+# Info:     FDRE \reg_q(1)  (.Q (TSec[1]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(1)  ), .R (nx51271z1)) ;
+# Info:     FDRE \reg_q(0)  (.Q (TSec[0]), .C (Pulse_int), .CE (nx56256z1), .D (
+# Info:          \inc_d(0)  ), .R (nx51271z1)) ;
+# Info:     XORCY xorcy_0 (.O (\inc_d(0)  ), .CI (nx8473z1), .LI (TSec[0])) ;
+# Info:     XORCY xorcy_1 (.O (\inc_d(1)  ), .CI (nx8474z1), .LI (TSec[1])) ;
+# Info:     XORCY xorcy_2 (.O (\inc_d(2)  ), .CI (nx8475z1), .LI (TSec[2])) ;
+# Info:     XORCY xorcy_3 (.O (\inc_d(3)  ), .CI (nx8476z1), .LI (TSec[3])) ;
+# Info:     XORCY xorcy_4 (.O (\inc_d(4)  ), .CI (nx8477z1), .LI (TSec[4])) ;
+# Info:     XORCY xorcy_5 (.O (\inc_d(5)  ), .CI (nx51683z1), .LI (TSec[5])) ;
+# Info:     FDRE \reg_q(6)_1_0  (.Q (TMin[6]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(6)_1_111  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(5)_1_1  (.Q (TMin[5]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(5)_1_108  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(4)_1_2  (.Q (TMin[4]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(4)_1_105  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(3)_1_3  (.Q (TMin[3]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(3)_1_102  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(2)_1_4  (.Q (TMin[2]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(2)_1_99  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(1)_1_5  (.Q (TMin[1]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(1)_1_96  ), .R (nx54956z1)) ;
+# Info:     FDRE \reg_q(0)_1_6  (.Q (TMin[0]), .C (Pulse_int), .CE (nx28360z1), .D (
+# Info:          \inc_d(0)_1_93  ), .R (nx54956z1)) ;
+# Info:     XORCY xorcy_0_1_7 (.O (\inc_d(0)_1_93  ), .CI (nx8473z1), .LI (TMin[0])) ;
+# Info:     XORCY xorcy_1_1_9 (.O (\inc_d(1)_1_96  ), .CI (nx63830z1), .LI (TMin[1])) ;
+# Info:     XORCY xorcy_2_1_11 (.O (\inc_d(2)_1_99  ), .CI (nx6079z1), .LI (TMin[2])) ;
+# Info:     XORCY xorcy_3_1_13 (.O (\inc_d(3)_1_102  ), .CI (nx51672z1), .LI (TMin[3])
+# Info:           ) ;
+# Info:     XORCY xorcy_4_1_15 (.O (\inc_d(4)_1_105  ), .CI (nx43887z1), .LI (TMin[4])
+# Info:           ) ;
+# Info:     XORCY xorcy_5_1_17 (.O (\inc_d(5)_1_108  ), .CI (nx58480z1), .LI (TMin[5])
+# Info:           ) ;
+# Info:     XORCY xorcy_6_1_19 (.O (\inc_d(6)_1_111  ), .CI (nx50695z1), .LI (TMin[6])
+# Info:           ) ;
+# Info:     FDRE \reg_q(6)_1_20  (.Q (THrs[6]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(6)_1_155  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(5)_1_21  (.Q (THrs[5]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(5)_1_152  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(4)_1_22  (.Q (THrs[4]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(4)_1_149  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(3)_1_23  (.Q (THrs[3]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(3)_1_146  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(2)_1_24  (.Q (THrs[2]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(2)_1_143  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(1)_1_25  (.Q (THrs[1]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(1)_1_140  ), .R (nx6970z1)) ;
+# Info:     FDRE \reg_q(0)_1_26  (.Q (THrs[0]), .C (Pulse_int), .CE (nx7286z1), .D (
+# Info:          \inc_d(0)_1_137  ), .R (nx6970z1)) ;
+# Info:     XORCY xorcy_0_1_27 (.O (\inc_d(0)_1_137  ), .CI (nx8473z1), .LI (THrs[0])) ;
+# Info:     XORCY xorcy_1_1_29 (.O (\inc_d(1)_1_140  ), .CI (nx61836z1), .LI (THrs[1])
+# Info:           ) ;
+# Info:     XORCY xorcy_2_1_31 (.O (\inc_d(2)_1_143  ), .CI (nx4085z1), .LI (THrs[2])) ;
+# Info:     XORCY xorcy_3_1_33 (.O (\inc_d(3)_1_146  ), .CI (nx53666z1), .LI (THrs[3])
+# Info:           ) ;
+# Info:     XORCY xorcy_4_1_35 (.O (\inc_d(4)_1_149  ), .CI (nx45881z1), .LI (THrs[4])
+# Info:           ) ;
+# Info:     XORCY xorcy_5_1_37 (.O (\inc_d(5)_1_152  ), .CI (nx38096z1), .LI (THrs[5])
+# Info:           ) ;
+# Info:     XORCY xorcy_6_1_39 (.O (\inc_d(6)_1_155  ), .CI (nx52689z1), .LI (THrs[6])
+# Info:           ) ;
+# Info:     FDRE \reg_q(6)_1_40  (.Q (AMin[6]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(6)_1_199  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(5)_1_41  (.Q (AMin[5]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(5)_1_196  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(4)_1_42  (.Q (AMin[4]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(4)_1_193  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(3)_1_43  (.Q (AMin[3]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(3)_1_190  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(2)_1_44  (.Q (AMin[2]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(2)_1_187  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(1)_1_45  (.Q (AMin[1]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(1)_1_184  ), .R (nx4976z1)) ;
+# Info:     FDRE \reg_q(0)_1_46  (.Q (AMin[0]), .C (Pulse_int), .CE (nx39672z1), .D (
+# Info:          \inc_d(0)_1_181  ), .R (nx4976z1)) ;
+# Info:     XORCY xorcy_0_1_47 (.O (\inc_d(0)_1_181  ), .CI (nx8473z1), .LI (AMin[0])) ;
+# Info:     XORCY xorcy_1_1_49 (.O (\inc_d(1)_1_184  ), .CI (nx59842z1), .LI (AMin[1])
+# Info:           ) ;
+# Info:     XORCY xorcy_2_1_51 (.O (\inc_d(2)_1_187  ), .CI (nx2091z1), .LI (AMin[2])) ;
+# Info:     XORCY xorcy_3_1_53 (.O (\inc_d(3)_1_190  ), .CI (nx55660z1), .LI (AMin[3])
+# Info:           ) ;
+# Info:     XORCY xorcy_4_1_55 (.O (\inc_d(4)_1_193  ), .CI (nx47875z1), .LI (AMin[4])
+# Info:           ) ;
+# Info:     XORCY xorcy_5_1_57 (.O (\inc_d(5)_1_196  ), .CI (nx62468z1), .LI (AMin[5])
+# Info:           ) ;
+# Info:     XORCY xorcy_6_1_59 (.O (\inc_d(6)_1_199  ), .CI (nx54683z1), .LI (AMin[6])
+# Info:           ) ;
+# Info:     FDRE \reg_q(6)_1_60  (.Q (AHrs[6]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(6)_1_243  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(5)_1_61  (.Q (AHrs[5]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(5)_1_240  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(4)_1_62  (.Q (AHrs[4]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(4)_1_237  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(3)_1_63  (.Q (AHrs[3]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(3)_1_234  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(2)_1_64  (.Q (AHrs[2]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(2)_1_231  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(1)_1_65  (.Q (AHrs[1]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(1)_1_228  ), .R (nx2982z1)) ;
+# Info:     FDRE \reg_q(0)_1_66  (.Q (AHrs[0]), .C (Pulse_int), .CE (nx11274z1), .D (
+# Info:          \inc_d(0)_1_225  ), .R (nx2982z1)) ;
+# Info:     XORCY xorcy_0_1_67 (.O (\inc_d(0)_1_225  ), .CI (nx8473z1), .LI (AHrs[0])) ;
+# Info:     XORCY xorcy_1_1_69 (.O (\inc_d(1)_1_228  ), .CI (nx57848z1), .LI (AHrs[1])
+# Info:           ) ;
+# Info:     XORCY xorcy_2_1_71 (.O (\inc_d(2)_1_231  ), .CI (nx97z1), .LI (AHrs[2])) ;
+# Info:     XORCY xorcy_3_1_73 (.O (\inc_d(3)_1_234  ), .CI (nx57654z1), .LI (AHrs[3])
+# Info:           ) ;
+# Info:     XORCY xorcy_4_1_75 (.O (\inc_d(4)_1_237  ), .CI (nx49869z1), .LI (AHrs[4])
+# Info:           ) ;
+# Info:     XORCY xorcy_5_1_77 (.O (\inc_d(5)_1_240  ), .CI (nx42084z1), .LI (AHrs[5])
+# Info:           ) ;
+# Info:     XORCY xorcy_6_1_79 (.O (\inc_d(6)_1_243  ), .CI (nx56677z1), .LI (AHrs[6])
+# Info:           ) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix263_S0disp(2)  (.O (\S0disp_1_0(2)  ), .I (nx41745z1)) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix291_S1disp(2)  (.O (\S1disp_1_0(2)  ), .I (nx925z1)) ;
+# Info:     GND ix300 (.G (\a(4)  )) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix344_M0disp(2)  (.O (\M0disp_1_0(2)  ), .I (nx7077z1)) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix372_M1disp(2)  (.O (\M1disp_1_0(2)  ), .I (nx49747z1)) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix439_H0disp(2)  (.O (\H0disp_1_0(2)  ), .I (nx28185z1)) ;
+# Info:     (* IS_INTERNAL_DONT_TOUCH = "true" *)
+# Info:     INV \ix467_H1disp(2)  (.O (\H1disp_1_0(2)  ), .I (nx60217z1)) ;
+# Info:     OBUF Buzz_obuf (.O (Buzz), .I (nx45858z1)) ;
+# Info:     OBUF \H0disp_obuf(0)  (.O (H0disp[0]), .I (nx11060z1)) ;
+# Info:     OBUF \H0disp_obuf(1)  (.O (H0disp[1]), .I (nx12057z1)) ;
+# Info:     OBUF \H0disp_obuf(2)  (.O (H0disp[2]), .I (\H0disp_1_0(2)  )) ;
+# Info:     OBUF \H0disp_obuf(3)  (.O (H0disp[3]), .I (nx14051z1)) ;
+# Info:     OBUF \H0disp_obuf(4)  (.O (H0disp[4]), .I (nx15048z1)) ;
+# Info:     OBUF \H0disp_obuf(5)  (.O (H0disp[5]), .I (nx16045z1)) ;
+# Info:     OBUF \H0disp_obuf(6)  (.O (H0disp[6]), .I (nx17042z1)) ;
+# Info:     OBUF \H1disp_obuf(0)  (.O (H1disp[0]), .I (nx40443z1)) ;
+# Info:     OBUF \H1disp_obuf(1)  (.O (H1disp[1]), .I (nx39446z1)) ;
+# Info:     OBUF \H1disp_obuf(2)  (.O (H1disp[2]), .I (\H1disp_1_0(2)  )) ;
+# Info:     OBUF \H1disp_obuf(3)  (.O (H1disp[3]), .I (nx37452z1)) ;
+# Info:     OBUF \H1disp_obuf(4)  (.O (H1disp[4]), .I (nx36455z1)) ;
+# Info:     OBUF \H1disp_obuf(5)  (.O (H1disp[5]), .I (nx35458z1)) ;
+# Info:     OBUF \H1disp_obuf(6)  (.O (H1disp[6]), .I (nx34461z1)) ;
+# Info:     OBUF \M0disp_obuf(0)  (.O (M0disp[0]), .I (nx26883z1)) ;
+# Info:     OBUF \M0disp_obuf(1)  (.O (M0disp[1]), .I (nx25886z1)) ;
+# Info:     OBUF \M0disp_obuf(2)  (.O (M0disp[2]), .I (\M0disp_1_0(2)  )) ;
+# Info:     OBUF \M0disp_obuf(3)  (.O (M0disp[3]), .I (nx23892z1)) ;
+# Info:     OBUF \M0disp_obuf(4)  (.O (M0disp[4]), .I (nx22895z1)) ;
+# Info:     OBUF \M0disp_obuf(5)  (.O (M0disp[5]), .I (nx21898z1)) ;
+# Info:     OBUF \M0disp_obuf(6)  (.O (M0disp[6]), .I (nx20901z1)) ;
+# Info:     OBUF \M1disp_obuf(0)  (.O (M1disp[0]), .I (nx52686z1)) ;
+# Info:     OBUF \M1disp_obuf(1)  (.O (M1disp[1]), .I (nx53683z1)) ;
+# Info:     OBUF \M1disp_obuf(2)  (.O (M1disp[2]), .I (\M1disp_1_0(2)  )) ;
+# Info:     OBUF \M1disp_obuf(3)  (.O (M1disp[3]), .I (nx55677z1)) ;
+# Info:     OBUF \M1disp_obuf(4)  (.O (M1disp[4]), .I (nx56674z1)) ;
+# Info:     OBUF \M1disp_obuf(5)  (.O (M1disp[5]), .I (nx57671z1)) ;
+# Info:     OBUF \M1disp_obuf(6)  (.O (M1disp[6]), .I (nx58668z1)) ;
+# Info:     OBUF \S0disp_obuf(0)  (.O (S0disp[0]), .I (nx32443z1)) ;
+# Info:     OBUF \S0disp_obuf(1)  (.O (S0disp[1]), .I (nx33440z1)) ;
+# Info:     OBUF \S0disp_obuf(2)  (.O (S0disp[2]), .I (\S0disp_1_0(2)  )) ;
+# Info:     OBUF \S0disp_obuf(3)  (.O (S0disp[3]), .I (nx35434z1)) ;
+# Info:     OBUF \S0disp_obuf(4)  (.O (S0disp[4]), .I (nx36431z1)) ;
+# Info:     OBUF \S0disp_obuf(5)  (.O (S0disp[5]), .I (nx37428z1)) ;
+# Info:     OBUF \S0disp_obuf(6)  (.O (S0disp[6]), .I (nx38425z1)) ;
+# Info:     OBUF \S1disp_obuf(0)  (.O (S1disp[0]), .I (nx19060z1)) ;
+# Info:     OBUF \S1disp_obuf(1)  (.O (S1disp[1]), .I (nx18063z1)) ;
+# Info:     OBUF \S1disp_obuf(2)  (.O (S1disp[2]), .I (\S1disp_1_0(2)  )) ;
+# Info:     OBUF \S1disp_obuf(3)  (.O (S1disp[3]), .I (nx16069z1)) ;
+# Info:     OBUF \S1disp_obuf(4)  (.O (S1disp[4]), .I (nx15072z1)) ;
+# Info:     OBUF \S1disp_obuf(5)  (.O (S1disp[5]), .I (nx14075z1)) ;
+# Info:     OBUF \S1disp_obuf(6)  (.O (S1disp[6]), .I (nx13078z1)) ;
+# Info:     IBUF Alarmon_ibuf (.O (Alarmon_int), .I (Alarmon)) ;
+# Info:     IBUF Hrsadv_ibuf (.O (Hrsadv_int), .I (Hrsadv)) ;
+# Info:     IBUF Minadv_ibuf (.O (Minadv_int), .I (Minadv)) ;
+# Info:     IBUF Alarmset_ibuf (.O (Alarmset_int), .I (Alarmset)) ;
+# Info:     IBUF Timeset_ibuf (.O (Timeset_int), .I (Timeset)) ;
+# Info:     IBUF Reset_ibuf (.O (Reset_int), .I (Reset)) ;
+# Info:     LUT6 ix15072z49377 (.O (nx15072z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix15072z49377.INIT = 64'h7F7F7FFFFBBFBBBF;
+# Info:     (* HLUTNM = "LUT62_1_11" *)
+# Info:     LUT4 ix38425z34017 (.O (nx38425z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          nx38425z4), .I3 (TSec[0])) ;
+# Info:          defparam ix38425z34017.INIT = 16'h7FBF;
+# Info:     (* HLUTNM = "LUT62_1_15" *)
+# Info:     LUT3 ix37428z1504 (.O (nx37428z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          TSec[0])) ;
+# Info:          defparam ix37428z1504.INIT = 8'hBE;
+# Info:     (* HLUTNM = "LUT62_1_15" *)
+# Info:     LUT3 ix36431z1567 (.O (nx36431z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          TSec[0])) ;
+# Info:          defparam ix36431z1567.INIT = 8'hFD;
+# Info:     (* HLUTNM = "LUT62_1_10" *)
+# Info:     LUT4 ix33440z21761 (.O (nx33440z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          nx38425z4), .I3 (TSec[0])) ;
+# Info:          defparam ix33440z21761.INIT = 16'h4FDF;
+# Info:     LUT6 ix56674z53281 (.O (nx56674z1), .I0 (TMin[6]), .I1 (AMin[6]), .I2 (
+# Info:          Alarmset_int), .I3 (nx58668z2), .I4 (nx58668z3), .I5 (nx58668z5)) ;
+# Info:          defparam ix56674z53281.INIT = 64'hFFFFFF35FFFFCAFF;
+# Info:     LUT6 ix22895z1313 (.O (nx22895z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix22895z1313.INIT = 64'hAEBDFFFFDFFFFFFF;
+# Info:     LUT6 ix25886z5146 (.O (nx25886z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix25886z5146.INIT = 64'hAEBD2C0DDFFF0EF8;
+# Info:     LUT6 ix26883z11282 (.O (nx26883z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix26883z11282.INIT = 64'hF7D77547A6F526F0;
+# Info:     LUT6 ix36455z1313 (.O (nx36455z1), .I0 (THrs[4]), .I1 (AHrs[4]), .I2 (
+# Info:          Alarmset_int), .I3 (nx34461z2), .I4 (nx34461z3), .I5 (nx34461z5)) ;
+# Info:          defparam ix36455z1313.INIT = 64'hFFFFFF3535FFFFFF;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT5 ix39446z55128 (.O (nx39446z1), .I0 (nx34461z2), .I1 (nx34461z3), .I2 (
+# Info:          nx34461z4), .I3 (nx34461z5), .I4 (nx34461z14)) ;
+# Info:          defparam ix39446z55128.INIT = 32'hC636D236;
+# Info:     LUT6 ix15048z1313 (.O (nx15048z1), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx17042z2), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix15048z1313.INIT = 64'hFFBAFFB3FFFDFFFF;
+# Info:     LUT6 ix28185z65500 (.O (nx28185z1), .I0 (nx17042z2), .I1 (nx34461z6), .I2 (
+# Info:          nx34461z10), .I3 (\a(4)  ), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix28185z65500.INIT = 64'hABEAABAEBAAAFABA;
+# Info:     LUT6 ix7077z64793 (.O (nx7077z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx58668z13), .I5 (nx20901z2)) ;
+# Info:          defparam ix7077z64793.INIT = 64'h240406D0F7F7F7F7;
+# Info:     (* HLUTNM = "LUT62_1_20" *)
+# Info:     LUT3 ix41745z1558 (.O (nx41745z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          TSec[0])) ;
+# Info:          defparam ix41745z1558.INIT = 8'hF4;
+# Info:     VCC ps_vcc (.P (nx8473z1)) ;
+# Info:     LUT5 ix2982z1058 (.O (nx2982z1), .I0 (nx2982z2), .I1 (AHrs[1]), .I2 (AHrs[0]
+# Info:          ), .I3 (Reset_int), .I4 (Hrsadv_int)) ;
+# Info:          defparam ix2982z1058.INIT = 32'hFF80FF00;
+# Info:     LUT3 ix11274z1548 (.O (nx11274z1), .I0 (Reset_int), .I1 (Alarmset_int), .I2 (
+# Info:          Hrsadv_int)) ;
+# Info:          defparam ix11274z1548.INIT = 8'hEA;
+# Info:     LUT5 ix4976z9506 (.O (nx4976z1), .I0 (nx4976z2), .I1 (AMin[2]), .I2 (AMin[1]
+# Info:          ), .I3 (AMin[0]), .I4 (Reset_int)) ;
+# Info:          defparam ix4976z9506.INIT = 32'hFFFF2000;
+# Info:     LUT3 ix39672z1548 (.O (nx39672z1), .I0 (Reset_int), .I1 (Alarmset_int), .I2 (
+# Info:          Minadv_int)) ;
+# Info:          defparam ix39672z1548.INIT = 8'hEA;
+# Info:     (* HLUTNM = "LUT62_1_12" *)
+# Info:     LUT4 ix7286z63027 (.O (nx7286z1), .I0 (nx28360z2), .I1 (nx7286z2), .I2 (
+# Info:          Timeset_int), .I3 (Hrsadv_int)) ;
+# Info:          defparam ix7286z63027.INIT = 16'hF111;
+# Info:     LUT3 ix28360z1527 (.O (nx28360z1), .I0 (nx28360z2), .I1 (Timeset_int), .I2 (
+# Info:          Minadv_int)) ;
+# Info:          defparam ix28360z1527.INIT = 8'hD5;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT5 ix51271z1442 (.O (nx51271z1), .I0 (nx51271z2), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (Reset_int)) ;
+# Info:          defparam ix51271z1442.INIT = 32'hFFFF0080;
+# Info:     (* HLUTNM = "LUT62_1_20" *)
+# Info:     LUT2 ix56256z1325 (.O (nx56256z1), .I0 (Reset_int), .I1 (Timeset_int)) ;
+# Info:          defparam ix56256z1325.INIT = 4'hB;
+# Info:     LUT6 ix13078z54517 (.O (nx13078z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix13078z54517.INIT = 64'hF7F7F777CFCBCFD3;
+# Info:     LUT6 ix14075z31905 (.O (nx14075z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix14075z31905.INIT = 64'hFEFEFEFE7777777F;
+# Info:     LUT6 ix16069z54517 (.O (nx16069z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix16069z54517.INIT = 64'hE7E7E763CFCBCFD3;
+# Info:     LUT6 ix18063z44763 (.O (nx18063z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix18063z44763.INIT = 64'h67676763A9A9A9B9;
+# Info:     LUT6 ix19060z62476 (.O (nx19060z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix19060z62476.INIT = 64'hC5C7C743EEEAEEEA;
+# Info:     (* HLUTNM = "LUT62_1_11" *)
+# Info:     LUT4 ix35434z29665 (.O (nx35434z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          nx38425z4), .I3 (TSec[0])) ;
+# Info:          defparam ix35434z29665.INIT = 16'h6EBF;
+# Info:     (* HLUTNM = "LUT62_1_10" *)
+# Info:     LUT4 ix32443z29601 (.O (nx32443z1), .I0 (nx38425z2), .I1 (nx38425z3), .I2 (
+# Info:          nx38425z4), .I3 (TSec[0])) ;
+# Info:          defparam ix32443z29601.INIT = 16'h6E7F;
+# Info:     LUT6 ix38425z50444 (.O (nx38425z4), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix38425z50444.INIT = 64'hDEBFFD7BFD7BBFE7;
+# Info:     (* HLUTNM = "LUT62_1_7" *)
+# Info:     LUT5 ix58668z54368 (.O (nx58668z1), .I0 (nx58668z2), .I1 (nx58668z3), .I2 (
+# Info:          nx58668z4), .I3 (nx58668z5), .I4 (nx58668z14)) ;
+# Info:          defparam ix58668z54368.INIT = 32'hFB3BCF3E;
+# Info:     (* HLUTNM = "LUT62_1_7" *)
+# Info:     LUT5 ix57671z64785 (.O (nx57671z1), .I0 (nx58668z2), .I1 (nx58668z3), .I2 (
+# Info:          nx58668z4), .I3 (nx58668z5), .I4 (nx58668z14)) ;
+# Info:          defparam ix57671z64785.INIT = 32'hE7EFF7EF;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT5 ix55677z44288 (.O (nx55677z1), .I0 (nx58668z5), .I1 (nx58668z14), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z3), .I4 (nx58668z4)) ;
+# Info:          defparam ix55677z44288.INIT = 32'hAADDA7DE;
+# Info:     (* HLUTNM = "LUT62_1_6" *)
+# Info:     LUT5 ix53683z43252 (.O (nx53683z1), .I0 (nx58668z5), .I1 (nx58668z14), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z3), .I4 (nx58668z4)) ;
+# Info:          defparam ix53683z43252.INIT = 32'hA50FA3D2;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT5 ix52686z25236 (.O (nx52686z1), .I0 (nx58668z2), .I1 (nx58668z3), .I2 (
+# Info:          nx58668z4), .I3 (nx58668z5), .I4 (nx58668z14)) ;
+# Info:          defparam ix52686z25236.INIT = 32'hFBFA5D72;
+# Info:     LUT6 ix20901z46111 (.O (nx20901z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix20901z46111.INIT = 64'hDBFFFFDFF9AFAEFD;
+# Info:     LUT6 ix21898z65105 (.O (nx21898z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix21898z65105.INIT = 64'h7D6FDBFB7FFAF92F;
+# Info:     LUT6 ix23892z13338 (.O (nx23892z1), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx20901z2), .I5 (nx58668z13)) ;
+# Info:          defparam ix23892z13338.INIT = 64'hDBFF7D4FF9AF2EF8;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT5 ix34461z64128 (.O (nx34461z1), .I0 (nx34461z2), .I1 (nx34461z3), .I2 (
+# Info:          nx34461z4), .I3 (nx34461z5), .I4 (nx34461z14)) ;
+# Info:          defparam ix34461z64128.INIT = 32'hEF5EF55E;
+# Info:     (* HLUTNM = "LUT62_1_2" *)
+# Info:     LUT5 ix35458z1105 (.O (nx35458z1), .I0 (nx34461z5), .I1 (nx34461z14), .I2 (
+# Info:          nx34461z2), .I3 (nx34461z3), .I4 (nx34461z4)) ;
+# Info:          defparam ix35458z1105.INIT = 32'hF53FFF2F;
+# Info:     (* HLUTNM = "LUT62_1_3" *)
+# Info:     LUT5 ix37452z58106 (.O (nx37452z1), .I0 (nx34461z5), .I1 (nx34461z14), .I2 (
+# Info:          nx34461z2), .I3 (nx34461z3), .I4 (nx34461z4)) ;
+# Info:          defparam ix37452z58106.INIT = 32'hAAA3DDD8;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT5 ix40443z30800 (.O (nx40443z1), .I0 (nx34461z2), .I1 (nx34461z3), .I2 (
+# Info:          nx34461z4), .I3 (nx34461z5), .I4 (nx34461z14)) ;
+# Info:          defparam ix40443z30800.INIT = 32'h6F2E732E;
+# Info:     LUT6 ix17042z58077 (.O (nx17042z1), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx17042z2), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix17042z58077.INIT = 64'hDFE7DEEDD7BFDDBB;
+# Info:     LUT6 ix16045z16656 (.O (nx16045z1), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx17042z2), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix16045z16656.INIT = 64'hE77DED7FBF7B3BEE;
+# Info:     LUT6 ix14051z53725 (.O (nx14051z1), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx17042z2), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix14051z53725.INIT = 64'h5DE75EED53BFCCBB;
+# Info:     LUT6 ix12057z53793 (.O (nx12057z1), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx17042z2), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix12057z53793.INIT = 64'h18BA12B351FDCCFF;
+# Info:     LUT6 ix11060z63251 (.O (nx11060z1), .I0 (nx17042z2), .I1 (nx34461z6), .I2 (
+# Info:          nx34461z10), .I3 (\a(4)  ), .I4 (nx34461z11), .I5 (nx34461z12)) ;
+# Info:          defparam ix11060z63251.INIT = 64'h73F773FC731FF1F1;
+# Info:     LUT4 ix45858z34082 (.O (nx45858z1), .I0 (nx45858z2), .I1 (nx45858z4), .I2 (
+# Info:          nx45858z6), .I3 (nx45858z8)) ;
+# Info:          defparam ix45858z34082.INIT = 16'h8000;
+# Info:     LUT5 ix45858z3369 (.O (nx45858z6), .I0 (nx45858z7), .I1 (TMin[6]), .I2 (
+# Info:          TMin[1]), .I3 (AMin[6]), .I4 (AMin[1])) ;
+# Info:          defparam ix45858z3369.INIT = 32'h80200802;
+# Info:     LUT5 ix45858z1320 (.O (nx45858z7), .I0 (TMin[4]), .I1 (THrs[3]), .I2 (
+# Info:          AMin[4]), .I3 (AHrs[3]), .I4 (Alarmon_int)) ;
+# Info:          defparam ix45858z1320.INIT = 32'hC4310000;
+# Info:     LUT6 ix45858z1834 (.O (nx45858z8), .I0 (THrs[6]), .I1 (THrs[2]), .I2 (
+# Info:          THrs[1]), .I3 (AHrs[6]), .I4 (AHrs[2]), .I5 (AHrs[1])) ;
+# Info:          defparam ix45858z1834.INIT = 64'h8040201008040201;
+# Info:     LUT5 ix45858z3375 (.O (nx45858z4), .I0 (nx45858z5), .I1 (TMin[5]), .I2 (
+# Info:          THrs[4]), .I3 (AMin[5]), .I4 (AHrs[4])) ;
+# Info:          defparam ix45858z3375.INIT = 32'h80A0080A;
+# Info:     LUT6 ix45858z5163 (.O (nx45858z5), .I0 (TMin[5]), .I1 (TMin[3]), .I2 (
+# Info:          TMin[0]), .I3 (AMin[5]), .I4 (AMin[3]), .I5 (AMin[0])) ;
+# Info:          defparam ix45858z5163.INIT = 64'hC040F0500C040F05;
+# Info:     LUT5 ix45858z3365 (.O (nx45858z2), .I0 (nx45858z3), .I1 (TMin[2]), .I2 (
+# Info:          THrs[5]), .I3 (AMin[2]), .I4 (AHrs[5])) ;
+# Info:          defparam ix45858z3365.INIT = 32'h80200802;
+# Info:     LUT6 ix45858z1831 (.O (nx45858z3), .I0 (TMin[4]), .I1 (TMin[3]), .I2 (
+# Info:          THrs[0]), .I3 (AMin[4]), .I4 (AMin[3]), .I5 (AHrs[0])) ;
+# Info:          defparam ix45858z1831.INIT = 64'hA0F020300A0F0203;
+# Info:     (* HLUTNM = "LUT62_1_4" *)
+# Info:     LUT5 ix60217z44953 (.O (nx60217z1), .I0 (nx34461z5), .I1 (nx34461z14), .I2 (
+# Info:          nx34461z2), .I3 (nx34461z3), .I4 (nx34461z4)) ;
+# Info:          defparam ix60217z44953.INIT = 32'h55FAAA77;
+# Info:     (* HLUTNM = "LUT62_1_8" *)
+# Info:     LUT4 ix34461z19059 (.O (nx34461z14), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx34461z12)) ;
+# Info:          defparam ix34461z19059.INIT = 16'h4544;
+# Info:     (* HLUTNM = "LUT62_1_8" *)
+# Info:     LUT5 ix34461z60436 (.O (nx34461z5), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (nx34461z11), .I4 (nx34461z12)) ;
+# Info:          defparam ix34461z60436.INIT = 32'hE7E7E6EE;
+# Info:     LUT5 ix34461z34581 (.O (nx34461z12), .I0 (\a(4)  ), .I1 (nx34461z9), .I2 (
+# Info:          nx34461z3), .I3 (nx34461z4), .I4 (nx34461z13)) ;
+# Info:          defparam ix34461z34581.INIT = 32'h7E1781E8;
+# Info:     LUT6 ix34461z16774 (.O (nx34461z11), .I0 (THrs[4]), .I1 (AHrs[4]), .I2 (
+# Info:          \a(4)  ), .I3 (Alarmset_int), .I4 (nx34461z9), .I5 (nx34461z3)) ;
+# Info:          defparam ix34461z16774.INIT = 64'h3C5AC3A5C3A53C5A;
+# Info:     LUT6 ix17042z58403 (.O (nx17042z2), .I0 (nx34461z6), .I1 (nx34461z10), .I2 (
+# Info:          \a(4)  ), .I3 (THrs[0]), .I4 (AHrs[0]), .I5 (Alarmset_int)) ;
+# Info:          defparam ix17042z58403.INIT = 64'hDFDF0000DF00DF00;
+# Info:     (* HLUTNM = "LUT62_1_13" *)
+# Info:     LUT5 ix34461z27540 (.O (nx34461z13), .I0 (THrs[6]), .I1 (THrs[2]), .I2 (
+# Info:          AHrs[6]), .I3 (AHrs[2]), .I4 (Alarmset_int)) ;
+# Info:          defparam ix34461z27540.INIT = 32'h0FF06666;
+# Info:     LUT6 ix34461z44756 (.O (nx34461z10), .I0 (nx34461z7), .I1 (nx34461z8), .I2 (
+# Info:          nx34461z2), .I3 (nx34461z9), .I4 (nx34461z3), .I5 (nx34461z4)) ;
+# Info:          defparam ix34461z44756.INIT = 64'h5656566A6AA9A9A9;
+# Info:     LUT6 ix34461z44495 (.O (nx34461z6), .I0 (nx34461z7), .I1 (nx34461z8), .I2 (
+# Info:          nx34461z2), .I3 (nx34461z9), .I4 (nx34461z3), .I5 (nx34461z4)) ;
+# Info:          defparam ix34461z44495.INIT = 64'hFEFEFEEAEAA8A8A8;
+# Info:     LUT3 ix34461z1370 (.O (nx34461z4), .I0 (THrs[4]), .I1 (AHrs[4]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1370.INIT = 8'h35;
+# Info:     LUT3 ix34461z1369 (.O (nx34461z3), .I0 (THrs[5]), .I1 (AHrs[5]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1369.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_17" *)
+# Info:     LUT3 ix34461z1375 (.O (nx34461z9), .I0 (THrs[1]), .I1 (AHrs[1]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1375.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_13" *)
+# Info:     LUT3 ix34461z1368 (.O (nx34461z2), .I0 (THrs[6]), .I1 (AHrs[6]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1368.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_16" *)
+# Info:     LUT3 ix34461z1374 (.O (nx34461z8), .I0 (THrs[2]), .I1 (AHrs[2]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1374.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_16" *)
+# Info:     LUT3 ix34461z1373 (.O (nx34461z7), .I0 (THrs[3]), .I1 (AHrs[3]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix34461z1373.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_5" *)
+# Info:     LUT5 ix49747z24519 (.O (nx49747z1), .I0 (nx58668z5), .I1 (nx58668z14), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z3), .I4 (nx58668z4)) ;
+# Info:          defparam ix49747z24519.INIT = 32'h5FA75AA5;
+# Info:     (* HLUTNM = "LUT62_1_9" *)
+# Info:     LUT4 ix58668z22143 (.O (nx58668z14), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11)) ;
+# Info:          defparam ix58668z22143.INIT = 16'h5150;
+# Info:     (* HLUTNM = "LUT62_1_9" *)
+# Info:     LUT5 ix58668z57632 (.O (nx58668z5), .I0 (nx58668z6), .I1 (\a(4)  ), .I2 (
+# Info:          nx58668z10), .I3 (nx58668z11), .I4 (nx58668z13)) ;
+# Info:          defparam ix58668z57632.INIT = 32'hDBDADBFA;
+# Info:     LUT6 ix58668z16776 (.O (nx58668z13), .I0 (TMin[4]), .I1 (AMin[4]), .I2 (
+# Info:          \a(4)  ), .I3 (Alarmset_int), .I4 (nx58668z8), .I5 (nx58668z2)) ;
+# Info:          defparam ix58668z16776.INIT = 64'h3C5AC3A5C3A53C5A;
+# Info:     LUT3 ix20901z1368 (.O (nx20901z2), .I0 (TMin[0]), .I1 (AMin[0]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix20901z1368.INIT = 8'h35;
+# Info:     LUT5 ix58668z34580 (.O (nx58668z11), .I0 (\a(4)  ), .I1 (nx58668z8), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z3), .I4 (nx58668z12)) ;
+# Info:          defparam ix58668z34580.INIT = 32'h7E1781E8;
+# Info:     LUT6 ix58668z44992 (.O (nx58668z10), .I0 (nx58668z7), .I1 (nx58668z8), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z9), .I4 (nx58668z3), .I5 (nx58668z4)) ;
+# Info:          defparam ix58668z44992.INIT = 64'h55566AAA56AAAA95;
+# Info:     (* HLUTNM = "LUT62_1_14" *)
+# Info:     LUT5 ix58668z27539 (.O (nx58668z12), .I0 (TMin[6]), .I1 (TMin[2]), .I2 (
+# Info:          AMin[6]), .I3 (AMin[2]), .I4 (Alarmset_int)) ;
+# Info:          defparam ix58668z27539.INIT = 32'h0FF06666;
+# Info:     LUT6 ix58668z44967 (.O (nx58668z6), .I0 (nx58668z7), .I1 (nx58668z8), .I2 (
+# Info:          nx58668z2), .I3 (nx58668z9), .I4 (nx58668z3), .I5 (nx58668z4)) ;
+# Info:          defparam ix58668z44967.INIT = 64'hFFFEEAAAFEAAAA80;
+# Info:     (* HLUTNM = "LUT62_1_14" *)
+# Info:     LUT3 ix58668z1370 (.O (nx58668z4), .I0 (TMin[6]), .I1 (AMin[6]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1370.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_18" *)
+# Info:     LUT3 ix58668z1369 (.O (nx58668z3), .I0 (TMin[4]), .I1 (AMin[4]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1369.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_19" *)
+# Info:     LUT3 ix58668z1375 (.O (nx58668z9), .I0 (TMin[2]), .I1 (AMin[2]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1375.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_17" *)
+# Info:     LUT3 ix58668z1368 (.O (nx58668z2), .I0 (TMin[5]), .I1 (AMin[5]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1368.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_19" *)
+# Info:     LUT3 ix58668z1374 (.O (nx58668z8), .I0 (TMin[1]), .I1 (AMin[1]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1374.INIT = 8'h35;
+# Info:     (* HLUTNM = "LUT62_1_18" *)
+# Info:     LUT3 ix58668z1373 (.O (nx58668z7), .I0 (TMin[3]), .I1 (AMin[3]), .I2 (
+# Info:          Alarmset_int)) ;
+# Info:          defparam ix58668z1373.INIT = 8'h35;
+# Info:     LUT6 ix925z16336 (.O (nx925z1), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (TSec[3])
+# Info:          , .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix925z16336.INIT = 64'h581A5A9E7ABE3AAE;
+# Info:     LUT6 ix38425z60061 (.O (nx38425z3), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix38425z60061.INIT = 64'hA7E55A9E5A9EE579;
+# Info:     LUT6 ix38425z57694 (.O (nx38425z2), .I0 (TSec[5]), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (TSec[1]), .I5 (\a(4)  )) ;
+# Info:          defparam ix38425z57694.INIT = 64'h63DCC6BDC6BDDC3B;
+# Info:     LUT6 ix2982z1315 (.O (nx2982z2), .I0 (AHrs[6]), .I1 (AHrs[5]), .I2 (AHrs[4])
+# Info:          , .I3 (AHrs[3]), .I4 (AHrs[2]), .I5 (Alarmset_int)) ;
+# Info:          defparam ix2982z1315.INIT = 64'h0010000000000000;
+# Info:     LUT6 ix4976z1315 (.O (nx4976z2), .I0 (AMin[6]), .I1 (AMin[5]), .I2 (AMin[4])
+# Info:          , .I3 (AMin[3]), .I4 (Alarmset_int), .I5 (Minadv_int)) ;
+# Info:          defparam ix4976z1315.INIT = 64'h4000000000000000;
+# Info:     LUT6 ix6970z1314 (.O (nx6970z1), .I0 (nx6970z2), .I1 (nx6970z3), .I2 (
+# Info:          THrs[3]), .I3 (THrs[1]), .I4 (THrs[0]), .I5 (Reset_int)) ;
+# Info:          defparam ix6970z1314.INIT = 64'h5555555504000000;
+# Info:     LUT4 ix6970z5412 (.O (nx6970z3), .I0 (THrs[6]), .I1 (THrs[5]), .I2 (THrs[4])
+# Info:          , .I3 (THrs[2])) ;
+# Info:          defparam ix6970z5412.INIT = 16'h1000;
+# Info:     (* HLUTNM = "LUT62_1_12" *)
+# Info:     LUT4 ix6970z5137 (.O (nx6970z2), .I0 (nx28360z2), .I1 (nx7286z2), .I2 (
+# Info:          Timeset_int), .I3 (Hrsadv_int)) ;
+# Info:          defparam ix6970z5137.INIT = 16'h0EEE;
+# Info:     LUT6 ix54956z1058 (.O (nx54956z1), .I0 (TMin[3]), .I1 (TMin[1]), .I2 (
+# Info:          TMin[0]), .I3 (Reset_int), .I4 (nx54956z2), .I5 (nx54956z3)) ;
+# Info:          defparam ix54956z1058.INIT = 64'h0000FF800000FF00;
+# Info:     LUT5 ix7286z34082 (.O (nx7286z2), .I0 (nx54956z3), .I1 (TMin[3]), .I2 (
+# Info:          TMin[1]), .I3 (TMin[0]), .I4 (Reset_int)) ;
+# Info:          defparam ix7286z34082.INIT = 32'h00007FFF;
+# Info:     LUT4 ix54956z1380 (.O (nx54956z3), .I0 (TMin[6]), .I1 (TMin[5]), .I2 (
+# Info:          TMin[4]), .I3 (TMin[2])) ;
+# Info:          defparam ix54956z1380.INIT = 16'h0040;
+# Info:     LUT3 ix54956z1357 (.O (nx54956z2), .I0 (nx28360z2), .I1 (Timeset_int), .I2 (
+# Info:          Minadv_int)) ;
+# Info:          defparam ix54956z1357.INIT = 8'h2A;
+# Info:     (* HLUTNM = "LUT62_1_1" *)
+# Info:     LUT5 ix28360z1186 (.O (nx28360z2), .I0 (nx51271z2), .I1 (TSec[4]), .I2 (
+# Info:          TSec[3]), .I3 (TSec[2]), .I4 (Reset_int)) ;
+# Info:          defparam ix28360z1186.INIT = 32'h0000FF7F;
+# Info:     LUT5 ix51271z1443 (.O (nx51271z2), .I0 (TSec[5]), .I1 (TSec[1]), .I2 (
+# Info:          TSec[0]), .I3 (\a(4)  ), .I4 (Timeset_int)) ;
+# Info:          defparam ix51271z1443.INIT = 32'h00000080;
+# Info:     BUFGP Pulse_ibuf (.O (Pulse_int), .I (Pulse)) ;
+# Info:     MUXCY muxcy_0 (.O (nx8474z1), .CI (nx8473z1), .DI (\a(4)  ), .S (TSec[0])) ;
+# Info:     MUXCY muxcy_1 (.O (nx8475z1), .CI (nx8474z1), .DI (\a(4)  ), .S (TSec[1])) ;
+# Info:     MUXCY muxcy_2 (.O (nx8476z1), .CI (nx8475z1), .DI (\a(4)  ), .S (TSec[2])) ;
+# Info:     MUXCY muxcy_3 (.O (nx8477z1), .CI (nx8476z1), .DI (\a(4)  ), .S (TSec[3])) ;
+# Info:     MUXCY muxcy_4 (.O (nx51683z1), .CI (nx8477z1), .DI (\a(4)  ), .S (TSec[4])
+# Info:           ) ;
+# Info:     MUXCY muxcy_0_1_8 (.O (nx63830z1), .CI (nx8473z1), .DI (\a(4)  ), .S (
+# Info:           TMin[0])) ;
+# Info:     MUXCY muxcy_1_1_10 (.O (nx6079z1), .CI (nx63830z1), .DI (\a(4)  ), .S (
+# Info:           TMin[1])) ;
+# Info:     MUXCY muxcy_2_1_12 (.O (nx51672z1), .CI (nx6079z1), .DI (\a(4)  ), .S (
+# Info:           TMin[2])) ;
+# Info:     MUXCY muxcy_3_1_14 (.O (nx43887z1), .CI (nx51672z1), .DI (\a(4)  ), .S (
+# Info:           TMin[3])) ;
+# Info:     MUXCY muxcy_4_1_16 (.O (nx58480z1), .CI (nx43887z1), .DI (\a(4)  ), .S (
+# Info:           TMin[4])) ;
+# Info:     MUXCY muxcy_5_1_18 (.O (nx50695z1), .CI (nx58480z1), .DI (\a(4)  ), .S (
+# Info:           TMin[5])) ;
+# Info:     MUXCY muxcy_0_1_28 (.O (nx61836z1), .CI (nx8473z1), .DI (\a(4)  ), .S (
+# Info:           THrs[0])) ;
+# Info:     MUXCY muxcy_1_1_30 (.O (nx4085z1), .CI (nx61836z1), .DI (\a(4)  ), .S (
+# Info:           THrs[1])) ;
+# Info:     MUXCY muxcy_2_1_32 (.O (nx53666z1), .CI (nx4085z1), .DI (\a(4)  ), .S (
+# Info:           THrs[2])) ;
+# Info:     MUXCY muxcy_3_1_34 (.O (nx45881z1), .CI (nx53666z1), .DI (\a(4)  ), .S (
+# Info:           THrs[3])) ;
+# Info:     MUXCY muxcy_4_1_36 (.O (nx38096z1), .CI (nx45881z1), .DI (\a(4)  ), .S (
+# Info:           THrs[4])) ;
+# Info:     MUXCY muxcy_5_1_38 (.O (nx52689z1), .CI (nx38096z1), .DI (\a(4)  ), .S (
+# Info:           THrs[5])) ;
+# Info:     MUXCY muxcy_0_1_48 (.O (nx59842z1), .CI (nx8473z1), .DI (\a(4)  ), .S (
+# Info:           AMin[0])) ;
+# Info:     MUXCY muxcy_1_1_50 (.O (nx2091z1), .CI (nx59842z1), .DI (\a(4)  ), .S (
+# Info:           AMin[1])) ;
+# Info:     MUXCY muxcy_2_1_52 (.O (nx55660z1), .CI (nx2091z1), .DI (\a(4)  ), .S (
+# Info:           AMin[2])) ;
+# Info:     MUXCY muxcy_3_1_54 (.O (nx47875z1), .CI (nx55660z1), .DI (\a(4)  ), .S (
+# Info:           AMin[3])) ;
+# Info:     MUXCY muxcy_4_1_56 (.O (nx62468z1), .CI (nx47875z1), .DI (\a(4)  ), .S (
+# Info:           AMin[4])) ;
+# Info:     MUXCY muxcy_5_1_58 (.O (nx54683z1), .CI (nx62468z1), .DI (\a(4)  ), .S (
+# Info:           AMin[5])) ;
+# Info:     MUXCY muxcy_0_1_68 (.O (nx57848z1), .CI (nx8473z1), .DI (\a(4)  ), .S (
+# Info:           AHrs[0])) ;
+# Info:     MUXCY muxcy_1_1_70 (.O (nx97z1), .CI (nx57848z1), .DI (\a(4)  ), .S (AHrs[1]
+# Info:           )) ;
+# Info:     MUXCY muxcy_2_1_72 (.O (nx57654z1), .CI (nx97z1), .DI (\a(4)  ), .S (AHrs[2]
+# Info:           )) ;
+# Info:     MUXCY muxcy_3_1_74 (.O (nx49869z1), .CI (nx57654z1), .DI (\a(4)  ), .S (
+# Info:           AHrs[3])) ;
+# Info:     MUXCY muxcy_4_1_76 (.O (nx42084z1), .CI (nx49869z1), .DI (\a(4)  ), .S (
+# Info:           AHrs[4])) ;
+# Info:     MUXCY muxcy_5_1_78 (.O (nx56677z1), .CI (nx42084z1), .DI (\a(4)  ), .S (
+# Info:           AHrs[5])) ;
+# Info: endmodule

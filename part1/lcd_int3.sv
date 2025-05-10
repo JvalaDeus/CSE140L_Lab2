@@ -1,4 +1,3 @@
-
 // 1. convert binary to binary coded decimal 
 // 2. convert BCD to 7-segment LED/LCD/etc. display
 module lcd_int(
